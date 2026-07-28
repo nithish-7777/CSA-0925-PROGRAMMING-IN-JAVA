@@ -1,0 +1,53 @@
+import java.util.ArrayList;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<Student> al = new ArrayList<>();
+
+        Student s1 = new Student("Rajesh", 201, 57);
+        Student s2 = new Student("Kumar", 202, 45);
+        Student s3 = new Student("Arun", 203, 80);
+        Student s4 = new Student("Vijay", 204, 32);
+        Student s5 = new Student("Priya", 205, 65);
+
+        al.add(s1);
+        al.add(s2);
+        al.add(s3);
+        al.add(s4);
+        al.add(s5);
+
+        int pass = 0, fail = 0;
+
+        System.out.println("PASS STUDENTS");
+        for (Student s : al) {
+            if (s.marks >= 50) {
+                System.out.println(s.name +  s.regNo +  s.marks);
+                pass=pass+1;
+            }
+        }
+
+        System.out.println("FAIL STUDENTS");
+        for (Student s : al) {
+            if (s.marks < 50) {
+                System.out.println(s.name +  s.regNo +  s.marks);
+                fail=fail+1;
+            }
+        }
+
+        System.out.println("Total Pass = " + pass);
+        System.out.println("Total Fail = " + fail);
+    }
+}
+class Student {
+    String name;
+    int regNo;
+    int marks;
+
+    Student(String name, int regNo, int marks) {
+        this.name = name;
+        this.regNo = regNo;
+        this.marks = marks;
+    }
+}
