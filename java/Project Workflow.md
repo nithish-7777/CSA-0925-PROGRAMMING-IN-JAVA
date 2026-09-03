@@ -1,0 +1,21 @@
+# Java Project Workflow
+
+## Project Name
+ParkPulse Campus – Smart Campus Parking Management System
+
+## Project Description
+This project was developed using Java Swing, JDBC, and MySQL and demonstrates object-oriented programming concepts, layered architecture (UI–Service–DAO–Model), database-driven CRUD operations, and a complete campus parking management workflow including users, vehicles, zones, slots, reservations, entry/exit, payments, violations, and reports.
+
+## Project Workflow
+
+1. User starts the application (MainFrame launches login screen)  
+2. User enters login credentials and required details (e.g., vehicle number, reservation info, slot updates)  
+3. Java processes the input through UI panels and service/DAO layers  
+4. The system performs required operations (database queries, policy checks, session creation, fee calculation via stored procedure, updates to slots/reservations/payments/violations)  
+5. The result is displayed to the user (dashboard stats, tables, live map, reports, success/error messages)
+
+## Project Repository
+
+The complete source code, SQL schema, and project files are available in the following GitHub repository:
+
+[https://github.com/nithish-7777/ParkPulseCampus](https://github.com/nithish-7777/ParkPulseCampus)
